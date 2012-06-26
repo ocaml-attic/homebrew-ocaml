@@ -6,6 +6,7 @@ class Opam < Formula
   md5 '287548417eb131b288420c976b6ee7a8'
 
   head 'https://github.com/OCamlPro/opam.git'
+  depends_on 'objective-caml'
 
   def install
     ENV.deparallelize # Builds are not parallel-safe, esp. with many cores
