@@ -1,9 +1,9 @@
 require 'formula'
 
 class Opam < Formula
-  url 'https://github.com/OCamlPro/opam/tarball/0.3.1'
+  url 'https://github.com/OCamlPro/opam/tarball/0.3.2'
   homepage 'https://github.com/OCamlPro/opam'
-  md5 '602203a7dc9a42a616e815b5b7bb05a9'
+  md5 'ca025e670fa4dd9b3b7bd4a030f38abc'
 
   head 'https://github.com/OCamlPro/opam.git'
   depends_on 'objective-caml'
