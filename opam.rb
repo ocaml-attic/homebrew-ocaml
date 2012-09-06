@@ -12,6 +12,6 @@ class Opam < Formula
     ENV.deparallelize # Builds are not parallel-safe, esp. with many cores
     system "make"
     bin.mkdir
-    system "make", "BIN=#{prefix}/bin", "install"
+    system "make", "PREFIX=#{prefix}", "install"
   end
 end
