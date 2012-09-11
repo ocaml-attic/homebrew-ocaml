@@ -10,7 +10,7 @@ class Opam < Formula
 
   def install
     ENV.deparallelize # Builds are not parallel-safe, esp. with many cores
-    system "./configure", "--prefix", HOMEBREW_PREFIX,
+    system "./configure", "--prefix", prefix,
                           "--mandir", man
     system "make"
     bin.mkdir
